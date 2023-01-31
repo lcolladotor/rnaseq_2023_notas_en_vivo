@@ -3,7 +3,7 @@ library("here")
 library("ggplot2")
 
 ## Hello world
-print("Soy Leo (en vivo desde Cuerna!)")
+print("Soy Leo (¡en vivo desde Cuerna!)")
 
 ## Directorios
 dir_plots <- here::here("figuras")
