@@ -3,6 +3,13 @@
 library("recount3")
 
 
+## URL de recount3
+getOption("recount3_url",
+    "http://duffel.rail.bio/recount3")
+options(recount3_url = "https://recount-opendata.s3.amazonaws.com/recount3/release")
+getOption("recount3_url",
+    "http://duffel.rail.bio/recount3")
+
 ## ----'quick_example'--------------------------------
 ## Revisemos todos los proyectos con datos de humano en recount3
 human_projects <- available_projects()
