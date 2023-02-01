@@ -35,9 +35,11 @@ options(recount3_url = "https://recount-opendata.s3.amazonaws.com/recount3/relea
 # dput(proj_info)
 
 ## Crear la info del proyecto de forma naual
-proj_info <- structure(list(project = "SRP009615", organism = "human", file_source = "sra",
+proj_info <- structure(list(
+    project = "SRP009615", organism = "human", file_source = "sra",
     project_home = "data_sources/sra", project_type = "data_sources",
-    n_samples = 12L), row.names = 1838L, class = "data.frame")
+    n_samples = 12L
+), row.names = 1838L, class = "data.frame")
 
 ## Crea un objeto de tipo RangedSummarizedExperiment (RSE)
 ## con la información a nivel de genes
