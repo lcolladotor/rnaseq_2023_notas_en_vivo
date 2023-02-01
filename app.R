@@ -5,6 +5,11 @@
 ## shinyapps.io. Para eso necesitaremos:
 # install.packages("rsconnect")
 
+## También necesitamos verificar que tengamos todos
+## los paquetes en versiones nuevas. Eso
+## lo podemos hacer con:
+# BiocManager::valid()
+
 ## Después necesitamos copiar y pegar la información
 ## de nuestra cuenta (numéro y token de acceso)
 
