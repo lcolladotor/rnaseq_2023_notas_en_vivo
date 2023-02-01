@@ -1,6 +1,14 @@
-## ----'start', message=FALSE-------------------------
-## Load recount3 R package
+## Para hacer
+## https://libd.shinyapps.io/SRP009615/
 
+## Primero necesitamos configurar RStudio con
+## shinyapps.io. Para eso necesitaremos:
+# install.packages("rsconnect")
+
+## Después necesitamos copiar y pegar la información
+## de nuestra cuenta (numéro y token de acceso)
+
+## Ahora si ya podemos continuar
 options(repos = BiocManager::repositories())
 
 library("recount3")
