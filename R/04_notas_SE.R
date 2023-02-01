@@ -75,7 +75,7 @@ sce_layer <- spatialLIBD::fetch_data("sce_layer")
 sce_layer
 
 ## Revisemos el tamaño de este objeto
-lobstr::obj_size(sce_layer) / 1024^2 ## Convertir a MB
+lobstr::obj_size(sce_layer)
 
 
 ## ----explore_sce_layer, eval = FALSE----
