@@ -23,15 +23,22 @@ getOption("recount3_url",
 
 ## ----'quick_example'--------------------------------
 ## Revisemos todos los proyectos con datos de humano en recount3
-human_projects <- available_projects()
+# human_projects <- available_projects()
+#
+# ## Encuentra tu proyecto de interés. Aquí usaremos
+# ## SRP009615 de ejemplo
+# proj_info <- subset(
+#     human_projects,
+#     project == "SRP009615" & project_type == "data_sources"
+# )
+# dput(proj_info)
 
-## Encuentra tu proyecto de interés. Aquí usaremos
-## SRP009615 de ejemplo
-proj_info <- subset(
-    human_projects,
-    project == "SRP009615" & project_type == "data_sources"
-)
-## Crea un objetio de tipo RangedSummarizedExperiment (RSE)
+## Crear la info del proyecto de forma naual
+proj_info <- structure(list(project = "SRP009615", organism = "human", file_source = "sra",
+    project_home = "data_sources/sra", project_type = "data_sources",
+    n_samples = 12L), row.names = 1838L, class = "data.frame")
+
+## Crea un objeto de tipo RangedSummarizedExperiment (RSE)
 ## con la información a nivel de genes
 rse_gene_SRP009615 <- create_rse(proj_info)
 ## Explora el objeto RSE
