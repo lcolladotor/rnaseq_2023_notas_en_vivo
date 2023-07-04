@@ -20,7 +20,7 @@ library("recount3")
 
 
 ## URL de recount3
-options(recount3_url = "https://recount-opendata.s3.amazonaws.com/recount3/release")
+# options(recount3_url = "https://recount-opendata.s3.amazonaws.com/recount3/release")
 
 ## ----'quick_example'--------------------------------
 ## Revisemos todos los proyectos con datos de humano en recount3
@@ -34,7 +34,7 @@ options(recount3_url = "https://recount-opendata.s3.amazonaws.com/recount3/relea
 # )
 # dput(proj_info)
 
-## Crear la info del proyecto de forma naual
+## Crear la info del proyecto de forma manual
 proj_info <- structure(list(
     project = "SRP009615", organism = "human", file_source = "sra",
     project_home = "data_sources/sra", project_type = "data_sources",
